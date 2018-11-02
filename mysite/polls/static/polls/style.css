@@ -1,0 +1,10 @@
+.rr {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+body {
+    background: url("https://image.shutterstock.com/image-photo/white-background-paper-show-patterns-260nw-255421642.jpg") no-repeat;
+    background-size: cover !important;
+    background-size: 100% 100%;
+}

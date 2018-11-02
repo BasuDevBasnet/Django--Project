@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vote Players</title>
+    <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/svg/53/53210.svg"/>
+    
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css " integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}"/>
+</head>
+<body>
+    <div class="rr">
+<hr>
+<h1>Welcome to Player's Voting app</h1>
+<hr>
+    </div>
+{% include "polls/header.html" %}
+<div class="jumbotron">
+      <div class="container">
+        {% block main_content %}
+        {% endblock %}
+          </div>
+    </div>
+{% include "polls/footer.html" %}
+</body>
+</html>
